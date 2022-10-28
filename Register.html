@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+        body{
+            
+               
+                margin: 0px;         
+        }
+        
+        section{
+            margin: 100px;
+        }
+        .reg2{
+            background-color: rgb(238, 231, 247);
+            text-align: center;
+            
+            border-radius: 20px;
+           
+  
+        }
+        
+input[type=text], input[type=password], input[type=email]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  form{
+    background-color:transparent;
+    border: solid rgb(204, 192, 192) 1px;
+    border-radius: 10px;
+    margin-left: 200PX;
+    margin-right: 200px;
+  
+}
+.btn2, .btn{
+    margin-bottom: 5px;
+    background-color: #0f0f83d0;
+    color: white;
+    font-size: 20px;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 5px;
+        height: 50px;
+        width: 150px; 
+}
+.btn2{
+    background-color: rgb(240, 29, 93);
+}
+.btn:hover{
+    color:rgb(14, 11, 155);
+    font-weight: bold;
+        font-size: 20px;
+        background-color: transparent;
+        cursor: pointer;
+}
+
+.btn2:hover{
+    color: rgb(236, 44, 86);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+h1{
+    text-shadow: 5px 6px 5px rgb(3, 1, 24);
+    font-weight: bold;
+    font-size: 40px;
+}
+img{
+    margin: 20px;
+    max-width: 40px;
+}
+ img:hover{
+    background-color: rgb(245, 229, 229);
+}
+@media screen and (max-width:700px) {
+    form{
+        
+        flex-direction: column;
+       
+         margin-left: 100px;
+        
+         background-color:transparent;
+    border:none;
+    border-radius: 10px;
+   
+    margin-right: 200px;
+
+    }
+    .btn, .btn2{
+        flex-direction: column;
+        width: 140px;
+        height: 50px;
+        padding: 10px 40px;
+    }
+    h1{
+        flex-direction: column;
+        color: darkblue;
+        font-weight: bold;
+        font-size: 70px;
+        
+    font-size: 20px;
+    }
+    section, .reg2{
+        flex-direction: column;
+        margin: 0px;
+       background-color: transparent;
+        
+    }
+    body{
+        background-color: rgb(238, 252, 232);
+    }
+    input[type=text], input[type=password], input[type=email]{
+        width: 150%;
+        flex-direction: columns;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      span{
+        flex-direction: columns;
+        float: right;
+        
+        
+    }
+    
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="reg">
+            <div class="reg2">
+            <form action="#" class="form">
+                <h1> Register </h1>
+         <span>
+        <span>  <a href="https://www.facebook.com/" target="_blank"><img src="https://w7.pngwing.com/pngs/175/452/png-transparent-facebook-logo-facebook-icon-logo-facebook-icon-blue-text-rectangle-thumbnail.png" alt=""></a></span>
+        <span> <a href="https://twitter.com/i/flow/login" target="_blank"><img src="https://www.logo.wine/a/logo/Twitter/Twitter-Logo.wine.svg" alt=""></a></span>
+             <span>   <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsVAfhj9voUDLTiC9m8lcmj3WHw3s-HlxZ8Q&usqp=CAU"  alt=""> </a></span>
+             <span>   <a href="https://www.linkedin.com/feed/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt=""></a></span>
+               </span>
+                <br>
+                <input type="text" name="Your name" placeholder="Username" required><br>
+                <input type="email" name="email" placeholder="Email" required> <br>
+                <input type="password" name="password" placeholder="Password" required> <br>
+                <input type="password" name="confirm-password" placeholder="Confirm Password" required> <br>
+                
+                <div>
+                <a href="#"> <button class="btn"> Submit </button> </a> <br><br>
+                <input type="reset" value="Reset" class="btn2"> <br>
+            </div>
+            </form>
+        </div>
+        </div>
+    </section>
+</body>
+</html>
